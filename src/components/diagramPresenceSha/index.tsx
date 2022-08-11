@@ -12,7 +12,7 @@ export const DiagramPresenceSha: FC<Props> = ({ presenceShare }) => {
     const presenceSha = presenceShare.map((presence) => presence.presenceShare);
 
     return (
-        <div className="container_presenceShare bg_white">
+        <div className="container_presenceShare bg_card">
             <h2 className="title titleSeccion color_blue_dark">
                 Presence Share by Product
             </h2>

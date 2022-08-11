@@ -2,6 +2,7 @@ import { Container } from "./components/container";
 import { Dashboard } from "./components/dashboard";
 import { useFetchData } from "./components/hooks/useFetchData";
 import { Navbar } from "./components/navbar";
+import { Repo } from "./components/repo";
 import { Table } from "./components/table";
 
 export const App = () => {
@@ -17,6 +18,7 @@ export const App = () => {
                         priceEvolution={priceEvolution}
                     />
                     <Table beerProduct={beerProduct} />
+                    <Repo />
                 </>
             </Container>
         </>

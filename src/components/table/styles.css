@@ -1,6 +1,7 @@
 .style_table {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 1em;
 }
 
 .style_table .table_content-text {

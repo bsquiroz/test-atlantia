@@ -18,20 +18,26 @@ export const Table: FC<Props> = ({ beerProduct }) => {
             </h2>
 
             <div className="style_table">
-                <div className="table_content-text bg_gray-400">
-                    <p className="title titleItems ">nombre</p>
+                <div className="table_content-text bg-titleList">
+                    <p className="title titleItems color_titleList">nombre</p>
                 </div>
-                <div className="table_content-text bg_gray-400">
-                    <p className="title titleItems ">SKU</p>
+                <div className="table_content-text bg-titleList">
+                    <p className="title titleItems color_titleList">SKU</p>
                 </div>
-                <div className="table_content-text bg_gray-400">
-                    <p className="title titleItems ">% Presencia</p>
+                <div className="table_content-text bg-titleList">
+                    <p className="title titleItems color_titleList">
+                        % Presencia
+                    </p>
                 </div>
-                <div className="table_content-text bg_gray-400">
-                    <p className="title titleItems ">Av. price</p>
+                <div className="table_content-text bg-titleList">
+                    <p className="title titleItems color_titleList">
+                        Av. price
+                    </p>
                 </div>
-                <div className="table_content-text bg_gray-400">
-                    <p className="title titleItems ">Av. Position</p>
+                <div className="table_content-text bg-titleList">
+                    <p className="title titleItems color_titleList">
+                        Av. Position
+                    </p>
                 </div>
 
                 {beerProduct.map(

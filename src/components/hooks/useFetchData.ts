@@ -29,15 +29,25 @@ export const useFetchData = () => {
     }
 
     useEffect(() => {
-        Promise.all([
-            fecthData(PriceEvolutionURI),
-            fecthData(presenceShareURI),
-            fecthData(beerProductsURI),
-        ]).then((response) => {
-            setPriceEvolution(response[0]);
-            setPresenceShare(response[1]);
-            setBeerProduct(response[2]);
-        });
+        const dataAtlantia = localStorage.getItem("dataAtlantia");
+
+        if (dataAtlantia) {
+            setPriceEvolution(JSON.parse(dataAtlantia)[0]);
+            setPresenceShare(JSON.parse(dataAtlantia)[1]);
+            setBeerProduct(JSON.parse(dataAtlantia)[2]);
+        } else {
+            Promise.all([
+                fecthData(PriceEvolutionURI),
+                fecthData(presenceShareURI),
+                fecthData(beerProductsURI),
+            ]).then((response) => {
+                setPriceEvolution(response[0]);
+                setPresenceShare(response[1]);
+                setBeerProduct(response[2]);
+
+                localStorage.setItem("dataAtlantia", JSON.stringify(response));
+            });
+        }
     }, []);
 
     return {

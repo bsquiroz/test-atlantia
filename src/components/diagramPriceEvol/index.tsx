@@ -29,7 +29,7 @@ export const DiagramPriceEvol: FC<Props> = ({ priceEvolution }) => {
     const series: Series[] = Object.values(organizateData);
 
     return (
-        <div className="container_priceEvolution bg_white">
+        <div className="container_priceEvolution bg_card">
             <h2 className="title titleSeccion color_blue_dark">
                 Price Evolution
             </h2>

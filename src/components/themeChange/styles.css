@@ -1,0 +1,20 @@
+.style_theme {
+    width: 40px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 1em;
+}
+
+.circle {
+    width: 50%;
+    height: 100%;
+    border-radius: 1em;
+    background-color: var(--blue_dark);
+    margin-left: 0;
+    cursor: pointer;
+    transition: margin-left 0.5s;
+}
+
+.active {
+    margin-left: 20px;
+}

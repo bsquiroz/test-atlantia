@@ -16,9 +16,7 @@ export const ItemTable: FC<BeerProduct> = ({
     return (
         <Fragment>
             <div
-                className={`col-image ${
-                    index! % 2 ? "bg_gray-100" : "bg_white"
-                }`}
+                className={`col-image ${index! % 2 ? "bg_card-1" : "bg_card"}`}
             >
                 <div className="box__img">
                     <img src={productImage} alt={name} />
@@ -26,16 +24,12 @@ export const ItemTable: FC<BeerProduct> = ({
                 <p className="title titleItems color_gray">{name}</p>
             </div>
             <div
-                className={`col-normal ${
-                    index! % 2 ? "bg_gray-100" : "bg_white"
-                }`}
+                className={`col-normal ${index! % 2 ? "bg_card-1" : "bg_card"}`}
             >
                 <p className="title titleItems color_gray">{sku}</p>
             </div>
             <div
-                className={`col-normal ${
-                    index! % 2 ? "bg_gray-100" : "bg_white"
-                }`}
+                className={`col-normal ${index! % 2 ? "bg_card-1" : "bg_card"}`}
             >
                 <p
                     className={`title titleItems ${
@@ -48,16 +42,12 @@ export const ItemTable: FC<BeerProduct> = ({
                 </p>
             </div>
             <div
-                className={`col-normal ${
-                    index! % 2 ? "bg_gray-100" : "bg_white"
-                }`}
+                className={`col-normal ${index! % 2 ? "bg_card-1" : "bg_card"}`}
             >
                 <p className="title titleItems color_gray">{averagePrice}</p>
             </div>
             <div
-                className={`col-normal ${
-                    index! % 2 ? "bg_gray-100" : "bg_white"
-                }`}
+                className={`col-normal ${index! % 2 ? "bg_card-1" : "bg_card"}`}
             >
                 <p className="title titleItems color_gray">{averagePosition}</p>
             </div>

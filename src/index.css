@@ -22,9 +22,11 @@
     --aqua: #198068;
     --aqua-500: #23b794;
     --gray: #656566;
-    --gray100: #e9e9e9;
-    --gray400: #a6a6a7;
+    --bg-titleList: #a6a6a7;
+    --color-titleList: #000;
     --bg: #f0f6ff;
+    --bg-card-color: #fff;
+    --bg-itemlist: #e9e9e9;
 
     --fs-titlePrincipal: 40px;
     --fs-subtitle: 32px;
@@ -41,7 +43,16 @@ body.dark {
     --purple: #ac83d1;
     --aqua: #91dbca;
     --gray: #d3d3d3;
+    --bg-card-color: #1b3c5b;
+    --bg-itemlist: #35516d;
+    --bg-titleList: #0e2030;
+    --color-titleList: #fff;
     --bg: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue-500);
 }
 
 /* colors */
@@ -75,26 +86,31 @@ body.dark {
 .color_gray {
     color: var(--gray);
 }
+.color_titleList {
+    color: var(--color-titleList);
+}
 
 .bg_gray {
     background-color: var(--gray);
 }
-.bg_gray-100 {
-    background-color: var(--gray100);
-}
-.bg_gray-400 {
-    background-color: var(--gray400);
+.bg-titleList {
+    background-color: var(--bg-titleList);
 }
 .bg_blue-500 {
     background-color: var(--blue-500);
 }
 
-.bg_white {
-    background-color: #ffff;
+.bg_card {
+    background-color: var(--bg-card-color);
+}
+
+.bg_card-1 {
+    background-color: var(--bg-itemlist);
 }
 
 body {
     background-color: var(--bg);
+    transition: color 0.5s, background-color 0.5s;
 }
 
 /* Parrafos */
