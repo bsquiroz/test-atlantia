@@ -24,8 +24,6 @@ export const DiagramPriceEvol: FC<Props> = ({ priceEvolution }) => {
         return acum;
     }, {});
 
-    console.log(JSON.stringify(organizateData));
-
     const series: Series[] = Object.values(organizateData);
 
     return (
