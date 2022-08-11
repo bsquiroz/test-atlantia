@@ -1,0 +1,38 @@
+.box__img {
+    width: 121px;
+    height: 131px;
+}
+
+.box__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.col-image {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.col-normal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+@media (max-width: 750px) {
+    .col-image {
+        flex-direction: column;
+    }
+
+    .col-image p {
+        text-align: center;
+    }
+
+    .box__img {
+        width: 81px;
+        height: 91px;
+    }
+}

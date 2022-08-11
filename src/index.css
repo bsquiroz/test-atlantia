@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Montserrat:wght@600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #004eb3;
+    --blue-500: #006fff;
+    --blue_dark: #011b33;
+    --blue_dark-500: #022649;
+    --orange: #b35500;
+    --orange-500: #ff7a00;
+    --pita: #961740;
+    --pita-500: #d6215b;
+    --yellow: #b37e32;
+    --yellow-500: #ffb448;
+    --purple: #52227d;
+    --purple-500: #7530b2;
+    --aqua: #198068;
+    --aqua-500: #23b794;
+    --gray: #656566;
+    --gray100: #e9e9e9;
+    --gray400: #a6a6a7;
+    --bg: #f0f6ff;
+
+    --fs-titlePrincipal: 40px;
+    --fs-subtitle: 32px;
+    --fs-titleSeccion: 24px;
+    --fs-titleItems: 20px;
+}
+
+body.dark {
+    --blue: #80b7ff;
+    --blue_dark: #4e6780;
+    --orange: #ffa24d;
+    --pita: #e67a9d;
+    --yellow: #ffd291;
+    --purple: #ac83d1;
+    --aqua: #91dbca;
+    --gray: #d3d3d3;
+    --bg: #000000;
+}
+
+/* colors */
+.color_blue {
+    color: var(--blue);
+}
+.color_blue_dark {
+    color: var(--blue_dark);
+}
+.color_orange {
+    color: var(--orange);
+}
+.color_pita {
+    color: var(--pita);
+}
+.color_pita-500 {
+    color: var(--pita-500);
+}
+.color_yellow {
+    color: var(--yellow);
+}
+.color_purple {
+    color: var(--purple);
+}
+.color_aqua {
+    color: var(--aqua);
+}
+.color_aqua-500 {
+    color: var(--aqua-500);
+}
+.color_gray {
+    color: var(--gray);
+}
+
+.bg_gray {
+    background-color: var(--gray);
+}
+.bg_gray-100 {
+    background-color: var(--gray100);
+}
+.bg_gray-400 {
+    background-color: var(--gray400);
+}
+.bg_blue-500 {
+    background-color: var(--blue-500);
+}
+
+.bg_white {
+    background-color: #ffff;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+/* Parrafos */
+.paragraph {
+    font-family: "Hind";
+    font-style: normal;
+    line-height: 160%;
+}
+
+.paragraphNormal {
+    font-weight: 400;
+}
+
+.paragraphMedium {
+    font-weight: 500;
+}
+
+.paragraphBold {
+    font-weight: 600;
+}
+
+.paragraph14 {
+    font-size: 14px;
+}
+
+.paragraph16 {
+    font-size: 16px;
+}
+
+/* Titles */
+.title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.titlePrincipal {
+    font-size: var(--fs-titlePrincipal);
+}
+
+.subtitle {
+    font-size: var(--fs-subtitle);
+}
+
+.titleSeccion {
+    font-size: var(--fs-titleSeccion);
+}
+
+.titleItems {
+    font-size: var(--fs-titleItems);
+}
+
+@media (max-width: 800px) {
+    :root {
+        --fs-titlePrincipal: 30px;
+        --fs-subtitle: 22px;
+        --fs-titleSeccion: 14px;
+        --fs-titleItems: 10px;
+    }
+}

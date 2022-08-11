@@ -1,0 +1,13 @@
+.container_diagram {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+@media (max-width: 850px) {
+    .container_diagram {
+        grid-template-columns: 1fr;
+        gap: 3em;
+    }
+}

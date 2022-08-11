@@ -1,0 +1,5 @@
+.styles_navbar {
+    height: 70px;
+    max-width: calc(1200px - 1em);
+    margin: auto;
+}
